@@ -1,16 +1,25 @@
-function checkPrime(num){
-let count=0;
+function checkPrime(number){
+let factor=0;
 
-for(i=1;i<=num;i++){
+    for(i=1;i<=number;i++){
 
-if(i%num==1){count++}
-                 }
-
-if(count==2){return true}
-else{return false}
+  if(number%i==0){
+   factor++;
+  }
+  }
+if(factor==2){
+return true
+}
+else{
+return false
+}
 }
 
-let ans=checkPrime(3)
+let answer=checkPrime(3)
 
-if(ans==true){console.log("prime number")}
-else {console.log("Not a prime")}
+if(answer==true){
+console.log("prime number")
+}
+else {
+console.log("Not a prime number")
+}
